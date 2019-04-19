@@ -1,0 +1,33 @@
+{
+  "name": "foodbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon",
+    "initdb": "knex init",
+    "table01": "knex migrate:make createTables",
+    "migrate": "knex migrate:latest",
+    "seed01": "knex seed:make 01-dishes",
+    "seed02": "knex seed:make 02-recipe",
+    "seed03": "knex seed:make 03-ingredients",
+    "seed04": "knex seed:make 04-recipe_ingredients",
+    "runseed1": "knex seed:run 01-dishes",
+    "runseed2": "knex seed:run 02-recipe",
+    "runseed3": "knex seed:run 03-ingredients",
+    "runseed4": "knex seed:run 04-recipe_ingredients",
+    "seed": "knex seed:run",
+    "rollback": "knex migrate:rollback"
+  },
+  "keywords": [],
+  "author": "Web XVI",
+  "dependencies": {
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "knex": "^0.16.3",
+    "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
