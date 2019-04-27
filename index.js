@@ -10,7 +10,13 @@ server.use(helmet());
 server.use(express.json());
 
 server.get("/api/reciepes", (req, res) => {
-  res.json({ message: "fleshing out request structure" });
+  res.json({ message: "reciepes" });
+});
+server.get("/api/dishes", (req, res) => {
+  res.json({ message: "dishes" });
+});
+server.get("/api/ingredients", (req, res) => {
+  res.json({ message: "ingredients" });
 });
 
 const port = process.env.PORT || 5000;
