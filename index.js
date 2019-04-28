@@ -9,6 +9,7 @@ const server = require(express);
 server.use(helmet());
 server.use(express.json());
 
+// basic get requests with messages just made to flesh out different end points
 server.get("/api/reciepes", (req, res) => {
   res.json({ message: "reciepes" });
 });
