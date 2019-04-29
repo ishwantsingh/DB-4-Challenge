@@ -21,4 +21,4 @@ server.get("/api/ingredients", (req, res) => {
 });
 
 const port = process.env.PORT || 5000;
-server.listen(port, () => console.log(`\nAPI running on port ${port}\n`));
+server.listen(port, () => console.log(`\nLocal Host port number: ${port}\n`));
