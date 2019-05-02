@@ -11,13 +11,13 @@ server.use(express.json());
 
 // basic get requests with messages just made to flesh out different end points
 server.get("/api/reciepes", (req, res) => {
-  res.json({ message: "reciepes" });
+  res.json({ message: "reciepes are displayed here" });
 });
 server.get("/api/dishes", (req, res) => {
-  res.json({ message: "dishes" });
+  res.json({ message: "dishes are displayed here" });
 });
 server.get("/api/ingredients", (req, res) => {
-  res.json({ message: "ingredients" });
+  res.json({ message: "ingredients are displayed here" });
 });
 
 const port = process.env.PORT || 5000;
