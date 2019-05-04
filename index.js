@@ -20,6 +20,9 @@ server.get("/api/dishes", (req, res) => {
 server.get("/api/ingredients", (req, res) => {
   res.json({ message: "ingredients" });
 });
+server.get("/api/dishes/reciepes", (req, res) => {
+  res.json({ message: "reciepes of a particular dish" });
+});
 
 const port = process.env.PORT || 5000;
 server.listen(port, () =>
