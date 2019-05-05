@@ -23,6 +23,9 @@ server.get("/api/ingredients", (req, res) => {
 server.get("/api/dishes/reciepes", (req, res) => {
   res.json({ message: "reciepes of a particular dish" });
 });
+server.get("/api/dishes/:id", (req, res) => {
+  res.json({ message: `dish of id => ${req.params.id}` });
+});
 
 const port = process.env.PORT || 5000;
 server.listen(port, () =>
